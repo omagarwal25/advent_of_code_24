@@ -1,8 +1,10 @@
-import argv
 import day1
 import day2
 import day3
 import day4
+import day5
+
+import argv
 import dot_env as dot
 import gleam/io
 import gleam/result
@@ -29,6 +31,7 @@ fn run_day(day: String) -> Result(Nil, _) {
     "2" -> #(day2.part_one, day2.part_two)
     "3" -> #(day3.part_one, day3.part_two)
     "4" -> #(day4.part_one, day4.part_two)
+    "5" -> #(day5.part_one, day5.part_two)
     _ -> #(fn(_) { 0 }, fn(_) { 0 })
   }
 
