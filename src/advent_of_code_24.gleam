@@ -3,6 +3,8 @@ import day2
 import day3
 import day4
 import day5
+import day6
+import day7
 
 import argv
 import dot_env as dot
@@ -32,6 +34,8 @@ fn run_day(day: String) -> Result(Nil, _) {
     "3" -> #(day3.part_one, day3.part_two)
     "4" -> #(day4.part_one, day4.part_two)
     "5" -> #(day5.part_one, day5.part_two)
+    "6" -> #(day6.part_one, day6.part_two)
+    "7" -> #(day7.part_one, day7.part_two)
     _ -> #(fn(_) { 0 }, fn(_) { 0 })
   }
 
